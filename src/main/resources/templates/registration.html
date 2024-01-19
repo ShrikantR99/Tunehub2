@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration page</title>
+<link rel="stylesheet" th:href="@{/CSS/registrationStyle.css}">
+</head>
+<body>
+<div class="registration-container">
+<h2>Welcome to Tunehub </h2>
+<h2>User Registration:</h2>
+
+<form action="registration" method="post" class="registration-form">
+	<label for="username">UserName: </label>
+	<input type="text" name="username"/>
+	<br>
+	<label for="email">Email: </label>
+	<input type="email" name="email"/>
+	<br>
+	<label for="password">Password: </label>
+	<input type="password" name="password"/>
+	<br>
+	<label for="gender">Gender: </label>
+	M<input type="radio" name="gender" value="male"/>
+	F<input type="radio" name="gender" value="female"/>
+	O<input type="radio" name="gender" value="other"/>
+	<br>
+	<label for="role">Role: </label>
+	Admin<input type="radio" name="role" value="admin"/>
+	Customer<input type="radio" name="role" value="customer"/>
+	<br>
+	<label for="address">Address: </label>
+	<textarea name="address"></textarea>
+	<br>
+
+	<input type="submit" value="REGISTER"/>
+
+</form>
+</div>
+</body>
+</html>
